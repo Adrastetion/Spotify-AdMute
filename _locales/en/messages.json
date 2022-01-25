@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Spotify AdMute",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Mutes Spotify web player during ads.",
+    "description": "Description of the extension"
+  },
+  "localizedNowplaying": {
+    "message": "Now playing",
+    "description": "'Now playing' for each language"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Spotify AdMute",
+    "description": "拡張機能の名前"
+  },
+  "extensionDescription": {
+    "message": "広告が流れている間、Spotify Web Playerをミュートします。",
+    "description": "拡張機能の概要"
+  },
+  "localizedNowplaying": {
+    "message": "再生中",
+    "description": "言語ごとの「Now playing」"
+  }
+}

@@ -1,10 +1,9 @@
 {
-
   "manifest_version": 2,
-  "name": "Spotify AdMute",
+  "name": "__MSG_extensionName__",
   "version": "7.2",
 
-  "description": "Mutes Spotify web player during ads",
+  "description": "__MSG_extensionDescription__",
 
   "content_scripts": [
     {
@@ -12,5 +11,4 @@
       "js": ["admute.js"]
     }
   ]
-
 }

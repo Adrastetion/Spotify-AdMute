@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Spotify AdMute",
+    "description": "Nombre de la extensión"
+  },
+  "extensionDescription": {
+    "message": "Silencia el reproductor web de Spotify durante los anuncios.",
+    "description": "Descripción de la extensión"
+  },
+  "localizedNowplaying": {
+    "message": "En juego",
+    "description": "En cada idioma, 'Now playing'"
+  }
+}

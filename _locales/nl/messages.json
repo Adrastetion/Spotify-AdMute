@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Spotify AdMute",
+    "description": "Naam van de uitbreiding"
+  },
+  "extensionDescription": {
+    "message": "Zet de Spotify web speler uit tijdens advertenties.",
+    "description": "Beschrijving van de uitbreiding"
+  },
+  "localizedNowplaying": {
+    "message": "Nu spelen",
+    "description": "'Now playing' voor elke taal"
+  }
+}

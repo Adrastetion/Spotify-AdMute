@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Spotify AdMute",
+    "description": "Name der Nebenstelle"
+  },
+  "extensionDescription": {
+    "message": "Schaltet den Spotify-Webplayer während der Werbung stumm.",
+    "description": "Beschreibung der Erweiterung"
+  },
+  "localizedNowplaying": {
+    "message": "Jetzt spielen",
+    "description": "'Now playing' für jede Sprache"
+  }
+}
