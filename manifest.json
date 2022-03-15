@@ -1,6 +1,6 @@
 {
-  "manifest_version": 3,
-  "name": "__MSG_extensionName__",
+  "manifest_version": 2,
+  "name": "__MSG_extensionName__(multilingualizationPreview)",
   "version": "7.3",
 
   "description": "__MSG_extensionDescription__",

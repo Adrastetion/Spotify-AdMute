@@ -18,10 +18,10 @@ function getElement(query) {
 const config = { attributes: true };
 
 let isMuted = false;
-let adMute = false; // to keep track if the player was muted by the extension or the user
+let MutedbyThis = false; // to keep track if the player was muted by the extension or the user
 let muteBtn;
 let nextBtn;
-let localizedNowplaying = blowser.i18n.getMessage(localizedNowplaying);
+let Nowplaying = blowser.i18n.getMessage("localizedNowplaying");
 
 Promise.all([getElement(".player-controls__right"), getElement(".volume-bar")])
   .then((elements) => {
@@ -33,20 +33,18 @@ Promise.all([getElement(".player-controls__right"), getElement(".volume-bar")])
       isMuted = !isMuted;
     });
 
-    return getElement(`[aria-label*="${localizedNowplaying}"]`);
+    return getElement(`[data-testid="now-playing-widget"]`);
+    // Query of music title.
   })
   .then((trackDiv) => {
     let observer = new MutationObserver(function (mutations) {
-      if (nextBtn.hasAttribute("disabled")) {
-        if (isMuted === false) {
-          muteBtn.click();
-          adMute = true;
-        }
-      } else if (adMute === true && isMuted === true) {
+      if (nextBtn.hasAttribute("disabled") === true && isMuted === false) {
+        muteBtn.click();
+        MutedbyThis = true;
+      } else if (MutedbyThis === true && isMuted === true) {
         // unmute only if muted by extension
         muteBtn.click();
-        adMute = false;
-      } else {
+        MutedbyThis = false;
       }
     });
 
